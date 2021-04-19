@@ -1,0 +1,59 @@
+# # load("@com_nvidia_isaac_engine//bzl:isaac_engine.bzl", "isaac_cc_library")
+
+# # load("@rules_cc//cc:defs.bzl", "cc_binary", "cc_library")
+
+# # isaac_cc_library(
+# #     name = "maestro",
+# #     srcs = [
+# #         "maestro.cpp",
+# #     ],
+# #     hdrs = [
+# #         "maestro.hpp",
+# #         "maestroconfig.hpp"
+# #     ],
+# #     visibility = ["//visibility:public"],
+# #     deps = [
+# #         "@com_nvidia_isaac_engine//engine/core/math",
+# #     ],
+# # )
+
+# # cc_library(
+# #     name="maestro_cc",
+# #     srcs = [
+# #         "maestro.cpp",
+# #     ],
+# #     hdrs = [
+# #         "maestro.hpp"
+# #     ],
+# #     deps = [
+# #         ":config",
+# #         "@com_nvidia_isaac_engine//engine/core/math",
+# #     ],
+# #     visibility = ["//visibility:public"],
+# # )
+
+# # cc_library(
+# #     name="config",
+# #     hdrs = [
+# #         "maestroconfig.hpp",
+# #     ]
+# # )
+
+# load("//bzl:module.bzl", "isaac_cc_module")
+
+# isaac_cc_module(
+#     name = "kinova_jaco",
+#     srcs = [
+#         "KinovaJaco.cpp",
+#     ],
+#     hdrs = [
+#         "KinovaJaco.hpp",
+#     ],
+#     visibility = ["//visibility:public"],
+#     deps = [
+#         "//packages/composite/gems:parser",
+#         "//packages/kinova_jaco/gems:kinova_jaco",
+#         "//packages/map:kinematic_tree",
+#         "//packages/math/gems/kinematic_tree",
+#     ],
+# )
